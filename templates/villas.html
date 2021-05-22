@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find you dream home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Title</title>
+</head>
+
+<body style="background-image: url({% static 'images/home2.jpg'%}); background-repeat: no-repeat; height: 100%; background-size: cover;">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <img src="{% static 'images/logo4.png' %}" alt="My image" height="28"><br>
+  <a class="navbar-brand" href="#">Premium Properties</a>
+
+  <!-- Links -->
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Residential
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Lands</a>
+        <a class="dropdown-item" href="#">Apartments</a>
+        <a class="dropdown-item" href="#">Villas</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Commercial</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Agricultural</a>
+      <li class="nav-item">
+      <a class="nav-link" href="#">Pay Rent</a>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Agents</a>
+      <li class="nav-item">
+      <a class="nav-link" href="#">Property Management</a>
+    <li class="nav-item">
+      <a class="nav-link" href="http://127.0.0.1:8000/Login">Login</a>
+      <li class="nav-item">
+      <a class="nav-link" href="#">Sign up</a>
+  </ul>
+    <form class="form-inline" action="/action_page.php">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" >
+      <button class="btn btn-success" type="submit">Search</button>
+    </form>
+</nav>
+    {% block content %}
+
+
+    {% endblock %}
+
+</body>
+</html>
